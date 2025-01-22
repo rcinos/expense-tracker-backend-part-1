@@ -4,5 +4,5 @@
 dist
 node_modules
 
-prisma/**/*.db
-prisma/**/*.db-journal
+src/**/*.db
+src/**/*.db-journal

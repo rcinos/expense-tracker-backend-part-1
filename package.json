@@ -1,0 +1,47 @@
+{
+  "dependencies": {
+    "@prisma/client": "^6.2.1",
+    "better-sqlite3": "^11.8.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pino-http": "^10.4.0",
+    "pino-pretty": "^13.0.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/express": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0",
+    "eslint": "^9.18.0",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.4.2",
+    "typescript-eslint": "^8.20.0"
+  },
+  "name": "expense-tracker-backend-part-1",
+  "version": "1.0.0",
+  "description": "expense tracker",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "build": "tsc && xcopy src\\public dist\\public /E /I && xcopy src\\views dist\\views /E /I",
+    "lint": "eslint src",
+    "format": "prettier src --write",
+    "prepare": "husky",
+    "test": ""
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcinos/expense-tracker-backend-part-1.git"
+  },
+  "author": "Aliaksandr Huzarevich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rcinos/expense-tracker-backend-part-1/issues"
+  },
+  "homepage": "https://github.com/rcinos/expense-tracker-backend-part-1#readme"
+}
